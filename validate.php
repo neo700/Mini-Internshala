@@ -10,7 +10,7 @@ if(!$con){
 		
 }
 
-$check=mysqli_select_db($con,"assignment");
+$check=mysqli_select_db($con,"heroku_0b7857f57f33cec");
 if(!$check){
 	die("Connection failed: " . $check->connect_error);
 			
