@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Script to choose between student or employer at the login -->
+	<script type="text/javascript">
+        function student() {
+            $('#admin').html("<input type='text' class='form-control' name='username' placeholder='USERNAME' required >  ")
+            $('#student').html("<label>Date of Birth</label><input type='text' class='form-control' name='DOB' placeholder='YYYY-MM-DD' required >")
+
+        }
+
+        function employer() {
+            $('#admin').html("<input type='text' class='form-control' name='username' placeholder='USERNAME' required  >")
+            $('#student').text("")
+        }   
+    </script>
+    <!-- Custon CSS File -->
+    <link rel="stylesheet" href="assets/style.css" />
+
+	<title>Intershala</title>
+
+</head>
+<body>
+	<header>
+  <h2>Internshala</h2>
+</header>
+<div class="row">
+        <div class="col-sm-6 "></div>
+        <div class="col-sm-4" style=" padding:20px; margin-top: 200px; border-radius: 10px;" >
+            <center>
+        
+    </center>
+            <br>
+            
+
+           <form method="POST" action="register.php">
+           	  <label class="btn btn-primary btn-warning">
+                    <input type="radio" name="login" value="STUDENT" checked onclick="student()">STUDENT
+                </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                <label class="btn btn-primary btn-danger">
+                    <input type="radio" name="login" value="EMPLOYER" onclick="employer()">EMPLOYER
+                </label>
+                
+  	
+  	<div class="input-group">
+  	  <label>Name</label>
+  	  <input type="text" name="name" placeholder="Name" required>
+  	</div>
+  	<div class="input-group">
+  	  <label>Username</label>
+  	  <input type="text" name="username" placeholder="Username" required>
+  	</div>
+  	<div id="student">
+  		<label>Date of Birth</label>
+                        <input type="text"  name="DOB" placeholder="YYYY-MM-DD" value="" required>
+                    </div>
+  	<div class="input-group">
+  	  <label>Password</label>
+  	  <input type="password" name="password_1" required>
+  	</div>
+  	<div class="input-group">
+  	  <label>Confirm password</label>
+  	  <input type="password" name="password_2" required>
+  	</div>
+  	<div class="input-group">
+  	  <button type="submit" class="btn" name="reg_user" ">Register</button>
+  	</div>
+  	<p>
+  		Already a member? <a href="login.php">Sign in</a>
+  	</p>
+  </form>
+
+
+</body>
+</html>
