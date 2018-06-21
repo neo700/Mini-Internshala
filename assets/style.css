@@ -85,6 +85,9 @@
     .ranking-title {
         font-size: 2rem;
     }
+    .gap{
+        margin:5px;
+    }
     .table-ranking {
         font-size: 1rem;
         border-collapse: collapse;
