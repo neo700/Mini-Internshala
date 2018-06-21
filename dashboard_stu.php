@@ -80,9 +80,7 @@ if ($w->num_rows > 0) {
         	</tr>';
     }
 }
-else{
-	echo "not applied";
-} 
+
 ?>
 <form action="dashboard_stu_reg.php">
 <div class="input-group" style="margin: auto; text-align: right;">
