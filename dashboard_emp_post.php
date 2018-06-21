@@ -4,11 +4,11 @@ include("db_conection.php");
 if($_SESSION['mode']=="STUDENT")
 {
     echo "<script>";
-		 echo "alert('PAGE NOT ALLOWED    LOGIN AGAIN');";
-		 
+     echo "alert('PAGE NOT ALLOWED    LOGIN AGAIN');";
+     
 
 
-		  echo "window.location.href = 'login.html'";
+      echo "window.location.href = 'login.html'";
     echo "</script>";
 
 }
@@ -18,32 +18,32 @@ if($_SESSION['mode']=="STUDENT")
 <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 
 
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	    <link rel="stylesheet" href="assets/style.css" />
-	<title></title>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="assets/style.css" />
+  <title></title>
 </head>
 <body>
 <div class="row">
   <header class="main-header">
     
-	  <h1>Internshala</h1>
-	  <div style="float: right; margin-right-5px;" >
+    <h1 style="color: white;">Internshala</h1>
+    <div style="float: right; margin-right:80px;" >
 
 <form action="logout.php">
-  	  <button type="submit" class="btn btn-primary btn-danger" style="text-align:center;" name="reg_user" >Logout</button>
-  	
+      <button type="submit" class="btn btn-primary btn-danger" style="text-align:center;" name="reg_user" >Logout</button>
+    
 </form>
 </div>
-	  <h1 style="float:right; margin-right:20px">HEY, 
+    <h1 style="float:right; margin-right:20px">HEY, 
   <?php
 
 include("db_conection.php");
@@ -54,7 +54,7 @@ echo $_SESSION['username'];
 ?></h1>
   </div>
   </header>
-	<div class="container">
+  <div class="container">
 <div class="row">
         <div class="col-sm-3 "></div>
         <div class="col-sm-6"  >
@@ -62,30 +62,30 @@ echo $_SESSION['username'];
             
 
            <form method="POST" action="intern_post.php" style=" padding:30px; margin-top: 200px; margin-bottom: 50px; border-radius: 15px; background: grey;">
-           	  
+              
                 
 <center><h2>FORM</h2></center>
 <div >
-  	  
-  	  <input type="text" class="gap form-control" name="name" placeholder="Company Name" required>
-  	</div>
-  	<div>
-  	  <!-- <label></label> -->
-  	  <input type="text" class="gap form-control" name="description" placeholder="Job Description" required>
-  	</div>
-  	<div>
-  		<!-- <label>Apply By</label> -->
+      
+      <input type="text" class="gap form-control" name="name" placeholder="Company Name" required>
+    </div>
+    <div>
+      <!-- <label></label> -->
+      <input type="text" class="gap form-control" name="description" placeholder="Job Description" required>
+    </div>
+    <div>
+      <!-- <label>Apply By</label> -->
                         <input type="text" class="gap form-control"  name="DOB" placeholder="APPLY BY:YYYY-MM-DD" value="" required>
                     </div>
-  	
-  	<div >
-  	  <button class="gap form-control" type="submit" class="btn" name="reg_user" ">Register</button>
-  	</div>
+    
+    <div >
+      <button class="gap form-control" type="submit" class="btn" name="reg_user" ">Register</button>
+    </div>
 </form>
 
-</div>													     
+</div>                               
 <div class="col-sm-3"></div>
-		     </div>
+         </div>
 </body>
 </html>
 

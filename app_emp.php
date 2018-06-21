@@ -4,14 +4,14 @@ include("db_conection.php");
 if($_SESSION['mode']=="STUDENT")
 {
     echo "<script>";
-		 echo "alert('PAGE NOT ALLOWED    LOGIN AGAIN');";
-		 
+         echo "alert('PAGE NOT ALLOWED    LOGIN AGAIN');";
+         
 
 
-		  echo "window.location.href = 'login.html'";
+          echo "window.location.href = 'login.html'";
     echo "</script>";
 
-}	
+}   
 
 
 ?>
@@ -42,15 +42,15 @@ if($_SESSION['mode']=="STUDENT")
 <div class="row">
   <header class="main-header">
     
-	  <h1>Internshala</h1>
-	  <div style="float: right; margin-right-5px;" >
+      <h1 style="color: white;">Internshala</h1>
+      <div style="float: right; margin-right: 80px;" >
 
 <form action="logout.php">
-  	  <button type="submit" class="btn btn-primary btn-danger" style="text-align:center;" name="reg_user" >Logout</button>
-  	
+      <button type="submit" class="btn btn-primary btn-danger" style="text-align:center;" name="reg_user" >Logout</button>
+    
 </form>
 </div>
-	  <h1 style="float: right; margin-right:10px;">HEY, 
+      <h1 style="float: right; margin-right:10px;">HEY, 
   <?php
 include("db_conection.php");
 echo $_SESSION['username'];
@@ -59,22 +59,20 @@ echo $_SESSION['username'];
 </header>
 
        
+<div class="content">
+    <div class="ranking">
+        <h2 class="ranking-title">Application's Recievd</h2>
+        <table class="table-ranking">
+            <tr>
+                <th class="table-ranking-head">Company Name</th>
+                <th class="table-ranking-head">Your Id</th>
+                <th class="table-ranking-head">Student's Id</th>
+                <th class="table-ranking-head">Student's Info</th>
+                <th class="table-ranking-head">Apply By</th>
 
+            </tr>
+<?php
 
-        <div class="content">
-            <div class="ranking">
-                <h2 class="ranking-title">application recievd</h2>
-                <table class="table-ranking">
-                    <tr>
-                        <th class="table-ranking-head">company Name</th>
-                        <th class="table-ranking-head">emp id</th>
-                        <th class="table-ranking-head">Studennt id</th>
-                        <th class="table-ranking-head">Studennt infp</th>
-                        <th class="table-ranking-head">apply by</th>
-
-                    </tr>
-			</table>
-                    <?php
 
 include("db_conection.php");
 
@@ -100,12 +98,7 @@ if(!$w){
     }
 
 ?>
- <form action="dashboard_emp_post.php">
-            <div class="input-group" style="float:right;">
-                <button type="submit" class="btn" name="reg_user">register new</button>
-            </div>
-        </form>
 
-    </body>
 
-    </html>
+</body></html>
+

@@ -2,6 +2,6 @@
 
 session_start();
 session_destroy();  
-header('location: index.html');//use for the redirection to some page  
+header('location: login.html');//use for the redirection to some page  
 
 ?>  
