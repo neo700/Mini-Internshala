@@ -40,7 +40,7 @@ if($_SESSION['mode']=="STUDENT")
   <header class="main-header">
     
 	  <h1>Internshala</h1>
-	  <h1 style="text-align: right; margin-right:5px;">HEY, 
+	  <h1 style="float:right; margin-right:20px">HEY, 
   <?php
 include("db_conection.php");
 echo $_SESSION['username'];
