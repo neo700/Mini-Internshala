@@ -1,0 +1,116 @@
+
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+
+
+	
+	body { 
+	  margin: 0;
+	  font-size: 1.8rem;
+	  font-family: 'Avenir', Arial, sans-serif;
+	}
+	/*----------------HEADER-----------------*/
+	.main-header {
+	  position: fixed;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  height: 6rem;
+	  color: white;
+	  background: #444;
+	  line-height: 6rem;
+	  transform: translateY(0);
+	  transform: translate3d(0,0,0);
+	  transition: .25s transform;
+	  backface-visibility: hidden;
+	}
+	
+	.heads-up {
+	  transform: translateY(-6rem);
+	  transform: translate3d(0,-6rem,0);
+	}
+	
+	.main-header h1 {
+	  float: left;
+	  font-size: 1.4rem;
+	  margin: 0 0 0 2rem;
+	  text-transform: uppercase;
+	}
+	
+	.main-header nav {
+	  float: right;
+	  font-size: 1.4rem;
+	}
+	
+	.main-header nav ul { 
+	  margin: 0; 
+	  padding: 0; 
+	}
+	
+	.main-header nav li {
+	  display: inline-block;
+	  padding: 0 2rem;
+	  border-left: .1rem solid #555;
+	}
+	
+	main { 
+	  padding: 10rem 6rem;
+	  background: #EEE;
+	}
+
+/*-------------TABLES--------------------*/
+
+
+.content {
+        height: 100%;
+        font-family: monospace;
+    }
+    .ranking {
+        padding: 1rem;
+        height: 80%;
+        width: 60%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .ranking-title {
+        font-size: 2rem;
+    }
+    .table-ranking {
+        font-size: 1rem;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .table-ranking td,
+    .table-ranking-head {
+        text-align: left;
+        padding: 0.8rem;
+    }
+    .table-ranking tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    @media only screen and (max-width: 600px) {
+        .ranking-title {
+            font-size: 1.5rem;
+        }
+        .ranking {
+            padding: 1rem;
+            height: 80%;
+            width: 80%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+	}
+	
+
