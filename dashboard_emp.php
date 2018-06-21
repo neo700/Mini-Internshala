@@ -48,16 +48,7 @@ echo $_SESSION['username'];
   </div>
 </header>
 
-<form action="dashboard_emp_post.php">
-<div class="input-group">
-  	  <button type="submit" class="btn" name="reg_user" >register new</button>
-  	</div>
-</form>
-<form action="app_emp.php">
-<div class="input-group">
-  	  <button type="submit" class="btn" name="reg_user" >view application</button>
-  	</div>
-</form>
+
 
 
 <div class="content">
@@ -71,6 +62,7 @@ echo $_SESSION['username'];
                 <th class="table-ranking-head">apply by</th>
 
             </tr>
+	</table>
 <?php
 
 
@@ -92,7 +84,20 @@ if ($w->num_rows > 0) {
     }
 } 
 ?>
-
-
+<form action="dashboard_emp_post.php" style="margin: auto; float: right;">
+<div class="input-group">
+  	  <button type="submit" class="btn" name="reg_user" >register new</button>
+  	</div>
+</form>
+<form action="app_emp.php">
+<div class="input-group" style="margin: auto; float: right;">
+  	  <button type="submit" class="btn" name="reg_user" >view application</button>
+  	</div>
+</form>
+<form action="logout.php">
+<div style="margin: auto; float: right;" >
+  	  <button type="submit" class="btn btn-primary btn-danger" style="text-align: right;" name="reg_user" >Logout</button>
+  	</div>
+</form>
 </body></html>
 
