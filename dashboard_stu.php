@@ -48,16 +48,10 @@ echo $_SESSION['username'];
   </div>
 </header>
 
-<form action="dashboard_stu_reg.php">
-<div class="input-group" style="margin: auto; text-align: center;">
-  	  <button type="submit" class="btn" name="reg_user" >register new</button>
-  	</div>
-</form>
-
 
 <div class="content">
     <div class="ranking">
-        <h2 class="ranking-title">Intership applied/h2>
+        <h2 class="ranking-title">Intership applied</h2>
         <table class="table-ranking">
             <tr>
             	<th class="table-ranking-head">Internship id</th>
