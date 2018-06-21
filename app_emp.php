@@ -39,26 +39,19 @@ if($_SESSION['mode']=="STUDENT")
 
     <body>
 
-        <header>
-            <div class="row">
-                <h2>Internshala </h2>
-
-                <?php
-
+<div class="row">
+  <header class="main-header">
+    
+	  <h1>Internshala</h1>
+	  <h1 style="text-align: right; margin-right:5px;">HEY, 
+  <?php
 include("db_conection.php");
-
 echo $_SESSION['username'];
+?></h1>
+  </div>
+</header>
 
-?>
-
-            </div>
-        </header>
-
-        <form action="dashboard_emp_post.php">
-            <div class="input-group">
-                <button type="submit" class="btn" name="reg_user">register new</button>
-            </div>
-        </form>
+       
 
 
         <div class="content">
@@ -73,8 +66,8 @@ echo $_SESSION['username'];
                         <th class="table-ranking-head">apply by</th>
 
                     </tr>
+			</table>
                     <?php
-
 
 include("db_conection.php");
 
@@ -100,7 +93,11 @@ if(!$w){
     }
 
 ?>
-
+ <form action="dashboard_emp_post.php">
+            <div class="input-group" style="float:right;">
+                <button type="submit" class="btn" name="reg_user">register new</button>
+            </div>
+        </form>
 
     </body>
 
