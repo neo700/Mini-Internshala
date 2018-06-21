@@ -44,8 +44,8 @@ echo $_SESSION['username'];
   </div>
 </header>
 <div class="row">
-        <div class="col-sm-6 "></div>
-        <div class="col-sm-4" style=" padding:20px; margin-top: 200px; border-radius: 10px;" >
+        <div class="col-sm-3 "></div>
+        <div class="col-sm-6" style=" padding:20px; margin-top: 200px; border-radius: 10px;" >
             <center>
         
     </center>
@@ -87,7 +87,7 @@ echo $_SESSION['username'];
   	  <button type="submit" class="btn" name="reg_user" >Logout</button>
   	</div>
 </form>
-
+<div class="col-sm-3 "></div>
 </body>
 </html>
 
