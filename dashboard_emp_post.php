@@ -50,31 +50,31 @@ echo $_SESSION['username'];
 </header>
 <div class="row">
         <div class="col-sm-3 "></div>
-        <div class="col-sm-6" style=" padding:20px; margin-top: 200px; border-radius: 10px; background: grey;" >
+        <div class="col-sm-6"  >
             <center>
         
     </center>
             <br>
             
 
-           <form method="POST" action="intern_post.php">
+           <form method="POST" action="intern_post.php" style=" padding:30px; margin-top: 200px; border-radius: 15px; background: grey;">
            	  
                 
 
-<div class="gap">
+<div class="gap form-control">
   	  
   	  <input type="text" name="name" placeholder="Company Name" required>
   	</div>
-  	<div class="gap">
+  	<div class="gap form-control">
   	  <!-- <label></label> -->
   	  <input type="text" name="description" placeholder="Job Description" required>
   	</div>
-  	<div class="gap">
+  	<div class="gap form-control">
   		<!-- <label>Apply By</label> -->
                         <input type="text"  name="DOB" placeholder="APPLY BY:YYYY-MM-DD" value="" required>
                     </div>
   	
-  	<div class="gap">
+  	<div class="gap form-control">
   	  <button type="submit" class="btn" name="reg_user" ">Register</button>
   	</div>
 </form>
@@ -85,7 +85,7 @@ echo $_SESSION['username'];
   	  <button type="submit" class="btn" name="reg_user" >Logout</button>
   	</div>
 </form>
-
+<div class="col-sm-3"></div>
 </body>
 </html>
 
