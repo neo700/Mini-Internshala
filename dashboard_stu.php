@@ -93,6 +93,13 @@ if ($w->num_rows > 0) {
   	  <button type="submit" class="btn" name="reg_user" >register new</button>
   	</div>
 </form>
+	    
+<br>
+<form action="logout.php">
+<div style="margin: auto; float: right;" >
+  	  <button type="submit" class="btn btn-primary btn-danger" style="text-align: right;" name="reg_user" >Logout</button>
+  	</div>
+</form>
 
 </body></html>
 
