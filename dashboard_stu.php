@@ -36,19 +36,16 @@ if($_SESSION['mode']=="EMPLOYER")
 </head>
 <body>
 
-<header>
-  <div class="row">
-  <h2>Internshala     </h2>
-
-<?php
-
+<div class="row">
+  <header class="main-header">
+    
+	  <h1>Internshala</h1>
+	  <h2 style="text-align: right; margin-right:5px;">HEY, 
+  <?php
 include("db_conection.php");
-
 echo $_SESSION['username'];
-
-?>
-
-</div>
+?></h2>
+  </div>
 </header>
 
 <form action="dashboard_stu_reg.php">
