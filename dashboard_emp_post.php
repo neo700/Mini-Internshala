@@ -49,8 +49,8 @@ echo $_SESSION['username'];
 </div>
 </header>
 <div class="row">
-        <div class="col-sm-6 "></div>
-        <div class="col-sm-4" style=" padding:20px; margin-top: 200px; border-radius: 10px;" >
+        <div class="col-sm-3 "></div>
+        <div class="col-sm-6" style=" padding:20px; margin-top: 200px; border-radius: 10px; background: grey;" >
             <center>
         
     </center>
@@ -61,20 +61,20 @@ echo $_SESSION['username'];
            	  
                 
 
-<div class="input-group">
-  	  <label>Company Name</label>
-  	  <input type="text" name="name" placeholder="Name" required>
+<div class="gap">
+  	  
+  	  <input type="text" name="name" placeholder="Company Name" required>
   	</div>
-  	<div class="input-group ">
-  	  <label>Job Description</label>
-  	  <input type="text" name="description" placeholder="Name" required>
+  	<div class="gap">
+  	  <!-- <label></label> -->
+  	  <input type="text" name="description" placeholder="Job Description" required>
   	</div>
-  	<div class="input-group">
-  		<label>Apply By</label>
-                        <input type="text"  name="DOB" placeholder="YYYY-MM-DD" value="" required>
+  	<div class="gap">
+  		<!-- <label>Apply By</label> -->
+                        <input type="text"  name="DOB" placeholder="APPLY BY:YYYY-MM-DD" value="" required>
                     </div>
   	
-  	<div class="input-group">
+  	<div class="gap">
   	  <button type="submit" class="btn" name="reg_user" ">Register</button>
   	</div>
 </form>
