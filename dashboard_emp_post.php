@@ -82,6 +82,7 @@ echo $_SESSION['username'];
   	  <button type="submit" class="btn btn-primary btn-danger" style="text-align: right;" name="reg_user" >Logout</button>
   	</div>
 </form>
+</div>													     
 <div class="col-sm-3"></div>
 		     </div>
 </body>
