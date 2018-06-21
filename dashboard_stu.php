@@ -52,7 +52,7 @@ echo $_SESSION['username'];
 </header>
 
 <form action="dashboard_stu_reg.php">
-<div class="input-group">
+<div class="input-group" style="margin: auto; text-align: center;">
   	  <button type="submit" class="btn" name="reg_user" >register new</button>
   	</div>
 </form>
