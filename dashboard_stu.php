@@ -48,9 +48,11 @@ echo $_SESSION['username'];
   </div>
 </header>
 
+<br><br>
 
-<div class="content">
+<div class="content" >
     <div class="ranking">
+	    <center>
         <h2 class="ranking-title">Intership applied</h2>
         <table class="table-ranking">
             <tr>
@@ -59,6 +61,8 @@ echo $_SESSION['username'];
                 <th class="table-ranking-head">dob</th>
                 <th class="table-ranking-head">info</th>
             </tr>
+	</table>
+	    </center>
 <?php
 
 
@@ -82,8 +86,9 @@ if ($w->num_rows > 0) {
 }
 
 ?>
+		<br>
 <form action="dashboard_stu_reg.php">
-<div class="input-group" style="margin: auto; text-align: right;">
+<div class="input-group" style="margin: auto; float: right;">
   	  <button type="submit" class="btn" name="reg_user" >register new</button>
   	</div>
 </form>
