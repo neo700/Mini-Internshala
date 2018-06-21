@@ -40,10 +40,10 @@ if($_SESSION['mode']=="EMPLOYER")
   <header class="main-header">
     
 	  <h1>Internshala</h1>
-	  <div style="float: right;" >
+	  <div style="float: right; margin-right-5px;" >
 
 <form action="logout.php">
-  	  <button type="submit" class="btn btn-primary btn-danger" style="text-align: right;" name="reg_user" >Logout</button>
+  	  <button type="submit" class="btn btn-primary btn-danger" style="text-align:center;" name="reg_user" >Logout</button>
   	
 </form>
 </div>
