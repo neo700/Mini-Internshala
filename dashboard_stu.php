@@ -45,14 +45,14 @@ if($_SESSION['mode']=="EMPLOYER")
 include("db_conection.php");
 echo $_SESSION['username'];
 ?></h1>
-  </div>
+  
 </header>
-
+</div>
 <br><br>
 <br><br>
 
 <div class="content" >
-    <div class="ranking">
+    <div class="ranking" style="margin-top:100px;">
 	    <center>
         <h2 class="ranking-title">Intership applied</h2>
         <table class="table-ranking">
