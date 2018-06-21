@@ -45,7 +45,7 @@ echo $_SESSION['username'];
 </header>
 <div class="row">
         <div class="col-sm-3 "></div>
-        <div class="col-sm-6" style=" padding:20px; margin-top: 200px; border-radius: 10px;" >
+        <div class="col-sm-6" >
             <center>
         
     </center>
