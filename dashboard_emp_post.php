@@ -32,13 +32,13 @@ if($_SESSION['mode']=="STUDENT")
 	<title></title>
 </head>
 <body>
-<div class="row">  
-<header class="main-header">
-
- &nbsp<h2>Internshala</h2>
-</header>
-</div>
-
+<div class="row">
+  <header class="main-header">
+    
+  <h1>Internshala</h1>
+  
+  </div>
+  </header>
 <div class="row">
         <div class="col-sm-3 "></div>
         <div class="col-sm-6"  >
@@ -51,22 +51,22 @@ if($_SESSION['mode']=="STUDENT")
            <form method="POST" action="intern_post.php" style=" padding:30px; margin-top: 200px; border-radius: 15px; background: grey;">
            	  
                 
-
-<div class="gap form-control">
+<center><h2>FORM</h2></center>
+<div >
   	  
-  	  <input type="text" name="name" placeholder="Company Name" required>
+  	  <input type="text" class="gap form-control" name="name" placeholder="Company Name" required>
   	</div>
-  	<div class="gap form-control">
+  	<div>
   	  <!-- <label></label> -->
-  	  <input type="text" name="description" placeholder="Job Description" required>
+  	  <input type="text" class="gap form-control" name="description" placeholder="Job Description" required>
   	</div>
-  	<div class="gap form-control">
+  	<div>
   		<!-- <label>Apply By</label> -->
-                        <input type="text"  name="DOB" placeholder="APPLY BY:YYYY-MM-DD" value="" required>
+                        <input type="text" class="gap form-control"  name="DOB" placeholder="APPLY BY:YYYY-MM-DD" value="" required>
                     </div>
   	
-  	<div class="gap form-control">
-  	  <button type="submit" class="btn" name="reg_user" ">Register</button>
+  	<div >
+  	  <button class="gap form-control" type="submit" class="btn" name="reg_user" ">Register</button>
   	</div>
 </form>
 
