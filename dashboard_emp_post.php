@@ -35,7 +35,7 @@ if($_SESSION['mode']=="STUDENT")
 <div class="row">
 <header class="main-header">
   
-  <h2>Internshala</h2>
+ &nbsp<h2>Internshala</h2>
 
 <?php
 
