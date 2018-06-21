@@ -40,6 +40,13 @@ if($_SESSION['mode']=="EMPLOYER")
   <header class="main-header">
     
 	  <h1>Internshala</h1>
+	  <div style="float: right;" >
+
+<form action="logout.php">
+  	  <button type="submit" class="btn btn-primary btn-danger" style="text-align: right;" name="reg_user" >Logout</button>
+  	
+</form>
+</div>
 	  <h1 style="float:right; margin-right:20px">HEY, 
   <?php
 include("db_conection.php");
@@ -96,12 +103,6 @@ if ($w->num_rows > 0) {
 </form>
 <br>    
 </div>
-	    <div style="margin: auto; float: right;" >
-
-<form action="logout.php">
-  	  <button type="submit" class="btn btn-primary btn-danger" style="text-align: right;" name="reg_user" >Logout</button>
-  	
-</form>
-</div>
+	    
 </body></html>
 
