@@ -36,7 +36,7 @@ if($_SESSION['mode']=="STUDENT")
   <header class="main-header">
     
 	  <h1>Internshala</h1>
-	  <h2 style="text-align: right;">HEY, 
+	  <h2 style="text-align: right; margin-right:5px;">HEY, 
   <?php
 
 include("db_conection.php");
@@ -50,10 +50,7 @@ echo $_SESSION['username'];
 <div class="row">
         <div class="col-sm-3 "></div>
         <div class="col-sm-6"  >
-            <center>
-        
-    </center>
-            <br>
+
             
 
            <form method="POST" action="intern_post.php" style=" padding:30px; margin-top: 200px; border-radius: 15px; background: grey;">
@@ -78,10 +75,10 @@ echo $_SESSION['username'];
   	</div>
 </form>
 
-
+<br>
 <form action="logout.php">
-<div class="input-group">
-  	  <button type="submit" class="btn" name="reg_user" >Logout</button>
+<div >
+  	  <button type="submit" class="btn btn-primary btn-danger" style="text-align: right;" name="reg_user" >Logout</button>
   	</div>
 </form>
 <div class="col-sm-3"></div>
