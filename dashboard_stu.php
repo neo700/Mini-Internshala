@@ -90,7 +90,11 @@ else{
 	echo "not applied";
 } 
 ?>
-
+<form action="dashboard_stu_reg.php">
+<div class="input-group" style="margin: auto; text-align: center;">
+  	  <button type="submit" class="btn" name="reg_user" >register new</button>
+  	</div>
+</form>
 
 </body></html>
 
