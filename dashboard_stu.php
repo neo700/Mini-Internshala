@@ -88,18 +88,20 @@ if ($w->num_rows > 0) {
 
 ?>
 		<br>
+	    <div class="input-group" style=" float: right;">
 <form action="dashboard_stu_reg.php">
-<div class="input-group" style=" float: right;">
-  	  <button type="submit" class="btn" name="reg_user" >register new</button>
-  	</div>
-</form>
-	    
-<br>
-<form action="logout.php">
-<div style="margin: auto; float: right;" >
-  	  <button type="submit" class="btn btn-primary btn-danger" style="text-align: right;" name="reg_user" >Logout</button>
-  	</div>
-</form>
 
+  	  <button type="submit" class="btn" name="reg_user" >register new</button>
+  	
+</form>
+<br>    
+</div>
+	    <div style="margin: auto; float: right;" >
+
+<form action="logout.php">
+  	  <button type="submit" class="btn btn-primary btn-danger" style="text-align: right;" name="reg_user" >Logout</button>
+  	
+</form>
+</div>
 </body></html>
 
