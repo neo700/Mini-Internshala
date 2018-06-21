@@ -49,6 +49,7 @@ echo $_SESSION['username'];
 </header>
 
 <br><br>
+<br><br>
 
 <div class="content" >
     <div class="ranking">
