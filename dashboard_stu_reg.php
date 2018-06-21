@@ -83,8 +83,8 @@ echo $_SESSION['username'];
 
 
 <form action="logout.php">
-<div class="input-group">
-  	  <button type="submit" class="btn" name="reg_user" >Logout</button>
+<div >
+  	  <button type="submit" class="btn btn-primary btn-danger" style="text-align: right;" name="reg_user" >Logout</button>
   	</div>
 </form>
 <div class="col-sm-3 "></div>
