@@ -35,15 +35,16 @@ if($_SESSION['mode']=="STUDENT")
 <div class="row">
   <header class="main-header">
     
-  <h1>Internshala</h1>
+	  <h1>Internshala</h1>
+	  <h2 style="text-align: right;">HEY, 
   <?php
 
 include("db_conection.php");
 
 
-echo '<h2 style='text-align: right;'>HEY, .$_SESSION['username'].</h2>;
+echo $_SESSION['username'];
 
-?>
+?></h2>
   </div>
   </header>
 <div class="row">
