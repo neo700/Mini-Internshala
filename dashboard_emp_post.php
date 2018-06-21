@@ -36,17 +36,9 @@ if($_SESSION['mode']=="STUDENT")
 <header class="main-header">
 
  &nbsp<h2>Internshala</h2>
-
-<?php
-
-include("db_conection.php");
-echo '<h3 style:'text-align:right;'>HEY, '.$_SESSION['username'].</h3>';
-
-
-?>
-
-</div>
 </header>
+</div>
+
 <div class="row">
         <div class="col-sm-3 "></div>
         <div class="col-sm-6"  >
