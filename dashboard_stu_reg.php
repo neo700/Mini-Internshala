@@ -32,21 +32,16 @@ if($_SESSION['mode']=="EMPLOYER")
 	<title></title>
 </head>
 <body>
-
-<header>
-  <div class="row">
-  <h2>Internshala     </h2>
-
-<?php
-
+<div class="row">
+  <header class="main-header">
+    
+	  <h1>Internshala</h1>
+	  <h2 style="text-align: right; margin-right:5px;">HEY, 
+  <?php
 include("db_conection.php");
-
-
 echo $_SESSION['username'];
-
-?>
-
-</div>
+?></h2>
+  </div>
 </header>
 <div class="row">
         <div class="col-sm-6 "></div>
@@ -57,29 +52,32 @@ echo $_SESSION['username'];
             <br>
             
 
-           <form method="POST" action="intern_register.php">
+           
+            
+
+           <form method="POST" action="intern_register.php" style=" padding:30px; margin-top: 200px; border-radius: 15px; background: grey;">
            	  
                 
-
-<div class="input-group">
-  	  <label>internship id</label>
-  	  <input type="text" name="name" placeholder="Name" required>
+<center><h2>FORM</h2></center>
+		   <div>
+  	  <!-- <label></label> -->
+  	  <input type="text" class="gap form-control" name="name" placeholder="Internship ID" required>
   	</div>
-  	<div class="input-group ">
-  	  <label>company name</label>
-  	  <input type="text" name="comp" placeholder="Name" required>
+<div >
+  	  
+  	  <input type="text" class="gap form-control" name="comp" placeholder="Company Name" required>
   	</div>
-  	<div class="input-group">
-  		<label>Apply By</label>
-                        <input type="text"  name="DOB" placeholder="YYYY-MM-DD" value="" required>
+  	<div>
+  	  <!-- <label></label> -->
+  	  <input type="text" class="gap form-control" name="description" placeholder="Job Description" required>
+  	</div>
+  	<div>
+  		<!-- <label>Apply By</label> -->
+                        <input type="text" class="gap form-control"  name="DOB" placeholder="APPLY BY:YYYY-MM-DD" value="" required>
                     </div>
-                    <div class="input-group ">
-  	  <label>studetn info</label>
-  	  <input type="text" name="info" placeholder="Name" required>
-  	</div>
   	
-  	<div class="input-group">
-  	  <button type="submit" class="btn" name="reg_user" ">Register</button>
+  	<div >
+  	  <button class="gap form-control" type="submit" class="btn" name="reg_user" ">Register</button>
   	</div>
 </form>
 
