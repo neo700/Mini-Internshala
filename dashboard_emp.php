@@ -59,7 +59,7 @@ echo $_SESSION['username'];
 
 
 <div class="content">
-    <div class="ranking">
+    <div class="ranking" style="margin-top:100px;">
         <h2 class="ranking-title">Intership osted</h2>
         <table class="table-ranking">
             <tr>
