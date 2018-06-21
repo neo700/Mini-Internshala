@@ -33,7 +33,7 @@ if($_SESSION['mode']=="STUDENT")
 </head>
 <body>
 <div class="row">
-<header class="main-header">
+<header >
   
  &nbsp<h2>Internshala</h2>
 
@@ -41,7 +41,6 @@ if($_SESSION['mode']=="STUDENT")
 
 include("db_conection.php");
 
-echo "Hello, ";
 echo $_SESSION['username'];
 
 ?>
