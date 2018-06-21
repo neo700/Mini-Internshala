@@ -32,10 +32,10 @@ if($_SESSION['mode']=="STUDENT")
 	<title></title>
 </head>
 <body>
-
-<header>
-  <div class="row">
-  <h2>Internshala     </h2>
+<div class="row">
+<header class="main-header">
+  
+  <h2>Internshala</h2>
 
 <?php
 
