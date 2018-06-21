@@ -85,7 +85,7 @@ else{
 } 
 ?>
 <form action="dashboard_stu_reg.php">
-<div class="input-group" style="margin: auto; text-align: center;">
+<div class="input-group" style="margin: auto; text-align: right;">
   	  <button type="submit" class="btn" name="reg_user" >register new</button>
   	</div>
 </form>
