@@ -54,7 +54,7 @@ echo $_SESSION['username'];
 
             
 
-           <form method="POST" action="intern_post.php" style=" padding:30px; margin-top: 200px; border-radius: 15px; background: grey;">
+           <form method="POST" action="intern_post.php" style=" padding:30px; margin-top: 200px; margin-bottom: 50px; border-radius: 15px; background: grey;">
            	  
                 
 <center><h2>FORM</h2></center>
