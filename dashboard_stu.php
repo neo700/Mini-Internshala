@@ -89,7 +89,7 @@ if ($w->num_rows > 0) {
 ?>
 		<br>
 <form action="dashboard_stu_reg.php">
-<div class="input-group" style="margin: auto; float: right;">
+<div class="input-group" style=" float: right;">
   	  <button type="submit" class="btn" name="reg_user" >register new</button>
   	</div>
 </form>
