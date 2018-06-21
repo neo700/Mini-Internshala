@@ -41,7 +41,7 @@ if($_SESSION['mode']=="STUDENT")
 
 include("db_conection.php");
 
-
+echo "Hello, ";
 echo $_SESSION['username'];
 
 ?>
