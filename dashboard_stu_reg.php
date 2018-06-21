@@ -43,6 +43,7 @@ echo $_SESSION['username'];
 ?></h2>
   </div>
 </header>
+	<div class="container">
 <div class="row">
         <div class="col-sm-3 "></div>
         <div class="col-sm-6" >
@@ -87,7 +88,9 @@ echo $_SESSION['username'];
   	  <button type="submit" class="btn btn-primary btn-danger" style="text-align: right;" name="reg_user" >Logout</button>
   	</div>
 </form>
+													     </div>
 <div class="col-sm-3 "></div>
+		      </div>
 </body>
 </html>
 
