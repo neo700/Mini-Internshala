@@ -17,15 +17,15 @@
     <script type="text/javascript">
         function student() {
             $('#admin').html(
-                "<input type='text' class='form-control' name='username' placeholder='USERNAME' required >  ")
+                "<input type='text' class='form-control gap' name='username' placeholder='USERNAME' required >  ")
             $('#student').html(
-                "<input type='text' class='form-control' name='DOB' placeholder='DOB YYYY-MM-DD' required >")
+                "<input type='text' class='form-control gap' name='DOB' placeholder='DOB YYYY-MM-DD' required >")
 
         }
 
         function employer() {
             $('#admin').html(
-                "<input type='text' class='form-control' name='username' placeholder='USERNAME' required  >")
+                "<input type='text' class='form-control gap' name='username' placeholder='USERNAME' required  >")
             $('#student').text("")
         }
     </script>
@@ -37,19 +37,22 @@
 </head>
 
 <body>
-    <header>
-        <h2>Internshala</h2>
-    </header>
     <div class="row">
-        <div class="col-sm-6 "></div>
-        <div class="col-sm-4" style=" padding:20px; margin-top: 200px; border-radius: 10px;">
+    <header class="main-header">
+        <a href="index.html"><h1>Internshala</h1></a>
+        </div>
+    </header>
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-3 "></div>
+        <div class="col-sm-6" >
             <center>
 
             </center>
             <br>
 
 
-            <form method="POST" role="form" name="login_form" action="validate.php">
+            <form method="POST" role="form" name="login_form" action="validate.php" style="background: grey; border-radius: 15px; padding:30px; margin-top: 200px">
 
 
                 <div class="form-group">
@@ -63,30 +66,30 @@
                     </label>
 
                     <br>
-                    <br>
+                   
                     <br>
                     <div id="admin">
-                        <input type="text" class="form-control naam" name="username" placeholder="Username" value="" required>
+                        <input type="text" class="form-control gap" name="username" placeholder="Username" value="" required>
                     </div>
+                   
                     <br>
-                    <br>
-                    <input type="password" class="form-control" name="password" placeholder="Password" value="" required>
-                    <br>
+                    <input type="password" class="form-control gap" name="password" placeholder="Password" value="" required>
+                   
                     <br>
                     <div id="student">
-                        <input type="text" class="form-control" name="DOB" placeholder="DOB YYYY-MM-DD" value="" required>
+                        <input type="text" class="form-control gap" name="DOB" placeholder="DOB YYYY-MM-DD" value="" required>
                     </div>
 
                 </div>
 
 
 
-                <button type="submit" class="btn btn-primary btn-warning" id="Chakku" onclick="validate()">LOGIN</button>
+                <button type="submit" class="btn gap" onclick="validate()">LOGIN</button>
             </form>
 
 
 
-
+<div class="col-sm-3 "></div>
 </body>
 
 </html>
