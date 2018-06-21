@@ -32,16 +32,16 @@ if($_SESSION['mode']=="STUDENT")
 	<title></title>
 </head>
 <body>
-
-<header >
 <div class="row">  
+<header class="main-header">
+
  &nbsp<h2>Internshala</h2>
 
 <?php
 
 include("db_conection.php");
+echo '<h3 style:'text-align:right;'>HEY, '.$_SESSION['username'].</h3>';
 
-echo $_SESSION['username'];
 
 ?>
 
